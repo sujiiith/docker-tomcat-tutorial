@@ -1,7 +1,7 @@
 FROM tomcat:8.0-alpine
 LABEL maintainer="sujiiith@outlook.com"
 
-ADD sample.war /home/ec2-user/apache-tomcat-10.0.23/webapps/
+ADD sample.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
-CMD ["/home/ec2-user/apache-tomcat-10.0.23/bin/catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
